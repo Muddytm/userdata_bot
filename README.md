@@ -7,13 +7,12 @@ How to use:
 1. Make sure Skytap is installed ("pip install skytap"). Configure it to work with your credentials.
 2. Clone this repo to wherever you want.
 3. Initialize variables in all environment userdata by running "python update.py reset".
+4. Every hour, run "python update.py check".
 
-Note: this action will delete all existing userdata and replace it with a new
+Note: "reset" will delete all existing userdata and replace it with a new
 format. Variables by the name of "shutdown_time", "shutdown_delay", and
 "delete_environment" will be preserved, however. (This value format looks like
 "shutdown_time: 4" in the userdata form)
-
-4. Every hour, run "python update.py check".
 
 That's it!
 
